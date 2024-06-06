@@ -4,7 +4,10 @@ using namespace std;
 int main()
 {
 
-    int a = 15;
+    int a;
+
+    cout << "Enter N Number:";
+    cin >> a;
 
     if (a > 0)
     {
