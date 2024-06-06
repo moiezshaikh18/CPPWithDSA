@@ -1,6 +1,8 @@
 {
   "files.associations": {
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "ostream": "cpp"
   },
-  "code-runner.customCommand": "echo Hello"
+  "code-runner.customCommand": "echo Hello",
+  "C_Cpp.errorSquiggles": "disabled"
 }
