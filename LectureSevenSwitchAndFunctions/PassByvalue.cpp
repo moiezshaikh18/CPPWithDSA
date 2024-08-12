@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int dummy(int n)
+void dummy(int n)
 {
-    int ans = n * n;
-    return ans;
+    cout << "N is " << n << endl;
 }
 
 int main()
@@ -12,7 +11,7 @@ int main()
     int n;
     cin >> n;
 
-    n = dummy(n);
+    dummy(n);
 
     cout << "N from Main Function:-" << n << endl;
 }
