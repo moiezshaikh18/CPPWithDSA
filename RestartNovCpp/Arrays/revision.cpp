@@ -9,7 +9,7 @@ int main()
 
     int array[100];
 
-    cout << "Please enter the " << size << " elements::" << endl;
+    cout << "Please enter the " << size << " elements:::" << endl;
     for (int i = 0; i < size; i++)
     {
         cin >> array[i];
