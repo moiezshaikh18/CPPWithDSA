@@ -3,7 +3,8 @@
     "iostream": "cpp",
     "ostream": "cpp",
     "numeric": "cpp",
-    "type_traits": "cpp"
+    "type_traits": "cpp",
+    "cmath": "cpp"
   },
   "code-runner.customCommand": "echo Hello",
   "C_Cpp.errorSquiggles": "disabled"

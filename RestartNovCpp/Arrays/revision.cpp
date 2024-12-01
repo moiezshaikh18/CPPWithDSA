@@ -1,19 +1,24 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main()
 {
-    int size;
-    cout << "Enter the size of array::" << endl;
-    cin >> size;
+    long n;
+    cout << "Enter the decimal number:: " << endl;
+    cin >> n;
 
-    int array[100];
+    int i = 0;
+    int ans = 0;
 
-    cout << "Please enter the " << size << " elements::" << endl;
-    for (int i = 0; i < size; i++)
+    while (n != 0)
     {
-        cin >> array[i];
+        int bit = n & 1;
+        ans = (bit * pow(10, i) + ans);
+
+        n = n >> 1;
+        i++;
     }
 
-    return 0;
+    cout << "Binary representation is: " << ans << endl;
 }
