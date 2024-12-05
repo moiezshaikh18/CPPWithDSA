@@ -15,13 +15,32 @@ int findUniqueNumber(int arr[], int size)
             }
         }
 
-        cout << "Count:: " << count << endl;
         if (count == 1)
         {
             return arr[i];
         }
     }
 
+    return -1;
+}
+
+int findUniqueElementSecondApproch(int arr[], int size)
+{
+    int count[201] = {0};
+
+    for (int i = 0; i < size; i++)
+    {
+        int mappedIndex = arr[i] + 100;
+        count[mappedIndex]++;
+    }
+
+    for (int i = 0; i < 201; i++)
+    {
+        if (count[i] == 1)
+        {
+            return i - 100;
+        }
+    }
     return -1;
 }
 
@@ -41,8 +60,10 @@ int main()
     }
 
     int result = findUniqueNumber(array, size);
+    int secondApproch = findUniqueElementSecondApproch(array, size);
 
     cout << "Unique number is:: " << result << endl;
+    cout << "Unique number(Second Approch) is:: " << secondApproch << endl;
 
     cout << "Array elements are: ";
     for (int i = 0; i < size; i++)
