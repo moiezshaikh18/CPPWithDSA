@@ -3,6 +3,15 @@
 #include <iostream>
 using namespace std;
 
+void printArray(int arr[] ,int size){
+    cout << "Array elements are: ";
+    for(int i = 0; i < size; i++) {
+        cout << arr[i] << " "; // Print each element of the array
+    }
+    cout << endl; // End line after printing all elements
+}
+
+
 
 bool areFrequenciesUnique(int array[],int size ){
     
@@ -52,11 +61,7 @@ int main() {
     }    
     
     
-    cout << "Array elements are: ";
-    for(int i = 0; i < size; i++) {
-        cout << array[i] << " "; // Print each element of the array
-    }
-    cout << endl; // End line after printing all elements
+    printArray(array, size);
 
     return 0;
 }
