@@ -3,11 +3,11 @@ using namespace std;
 
 int findMinNumber(int array[], int size)
 {
-    int min = INT_MIN;
-    int max;
+    int max = INT_MAX;
+    int min;
     for (int i = 0; i < size; i++)
     {
-        if (array[i] > min)
+        if (array[i] < max)
         {
             return array[i];
         }
@@ -34,7 +34,7 @@ int main()
         cin >> array[i];
     }
 
-    int maxNumber = findMaxNumber(array, size);
+    int minNumber = findMinNumber(array, size);
 
-    cout << "Max Number from an array is: " << maxNumber << endl;
+    cout << "Max Number from an array is: " << minNumber << endl;
 }
